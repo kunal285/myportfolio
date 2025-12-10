@@ -1,15 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
   "functions": {
     "api/contact.py": {
-      "runtime": "python3.11",
-      "maxDuration": 10,
-      "memory": 512
-    },
-    "api/health.py": {
-      "runtime": "python3.11",
-      "maxDuration": 5,
-      "memory": 256
+      "maxDuration": 10
     }
-  },
-  "trailingSlash": false
+  }
 }
