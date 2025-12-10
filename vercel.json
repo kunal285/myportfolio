@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/contact.py": {
+      "runtime": "python3.11",
+      "maxDuration": 10,
+      "memory": 512
+    },
+    "api/health.py": {
+      "runtime": "python3.11",
+      "maxDuration": 5,
+      "memory": 256
+    }
+  },
+  "trailingSlash": false
+}

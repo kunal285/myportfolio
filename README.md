@@ -61,6 +61,33 @@ myportfolio/
 - **Edit styles:** Modify `assets/css/main.css`
 - **Add or modify content:** Update the HTML files for your projects, certificates, and other sections
 
+## Deploying to Vercel
+
+1. **Install the Vercel CLI (one-time):**
+   ```sh
+   npm install -g vercel
+   ```
+2. **Link and configure the project:**
+   ```sh
+   vercel link
+   ```
+3. **Add the required environment variables inside Vercel (`Settings → Environment Variables` or via CLI):**
+   - `BREVO_API_KEY`
+   - `BREVO_SENDER_EMAIL`
+   - `BREVO_SENDER_NAME` (optional, defaults to `Portfolio Contact Bot`)
+   - `BREVO_RECIPIENT_EMAIL` (defaults to sender email if omitted)
+4. **Deploy:**
+   ```sh
+   vercel deploy --prod
+   ```
+
+### How it works on Vercel
+
+- Static pages (all `.html`, CSS, JS, and assets) are served directly from the root of the repo.
+- The contact form sends requests to `/api/contact`, which is backed by the Python serverless function defined in `api/contact.py`.
+- Health checks are available at `/api/health` and share the same logic used locally (`backend/contact_handler.py`).
+- For local previews without a dev server you can still run `python -m backend.contact_handler` and set `window.CONTACT_API_BASE = "http://localhost:5000"` before loading `assets/js/contact.js`.
+
 ## Dependencies
 
 - Bootstrap
