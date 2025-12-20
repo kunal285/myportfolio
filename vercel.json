@@ -2,8 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "functions": {
-    "api/*.py": {
-      "maxDuration": 10
+    "api/**/*.js": {
+      "memory": 1024,
+      "maxDuration": 60
     }
   }
 }
