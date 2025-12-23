@@ -68,7 +68,7 @@ async function handleFormSubmit(e) {
         
         loadingDiv.style.display = 'none';
         
-        if (response.ok && result.success) {
+        if (result.success) {
             // Success
             successDiv.style.display = 'block';
             successDiv.textContent = result.message || 'Your message has been sent. Thank you!';
