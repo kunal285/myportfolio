@@ -1,4 +1,3 @@
-
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10,8 +9,10 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
+  --default-color-rgb: 39, 40, 41; /* RGB fallback for rgba() usage where color-mix() isn't supported */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color-rgb: 20, 157, 221; /* RGB fallback for rgba() usage where color-mix() isn't supported */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -36,6 +37,7 @@
 .dark-background {
   --background-color: #040b14;
   --default-color: #ffffff;
+  --default-color-rgb: 255, 255, 255;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
@@ -62,8 +64,14 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: var(--accent-color);
   text-decoration: none;
+}
+
+@supports (color: color-mix(in srgb, var(--accent-color), transparent 25%)) {
+  a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  }
 }
 
 h1,
@@ -143,14 +151,28 @@ h6 {
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border-right: 1px solid rgba(39, 40, 41, 0.1);
+}
+ 
+@supports (color: color-mix(in srgb, var(--default-color), transparent 90%)) {
+  .header {
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
 }
 
 .header .profile-img img {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border: 8px solid rgba(39, 40, 41, 0.15);
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 85%)) {
+  .header .profile-img img {
+    border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  }
 }
 
 .header .logo {
@@ -232,7 +254,13 @@ h6 {
 
 .header .header-toggle:hover {
   color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background-color: var(--accent-color);
+}
+
+@supports (color: color-mix(in srgb, var(--accent-color) 90%, white 15%)) {
+  .header .header-toggle:hover {
+    background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -286,7 +314,15 @@ h6 {
   border-radius: 50%;
   transition: 0.3s;
   flex-shrink: 0;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  background-color: rgba(20, 157, 221, 0.1);
+}
+
+@supports (color: color-mix(in srgb, var(--accent-color), transparent 90%)) {
+  .navmenu a .toggle-dropdown,
+  .navmenu a:focus .toggle-dropdown {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
 }
 
 .navmenu a .toggle-dropdown:hover,
@@ -320,7 +356,7 @@ h6 {
 
 .navmenu .dropdown a,
 .navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
+  color: var(--nav-dropdown-color);
 }
 
 .navmenu .dropdown a:hover,
@@ -336,9 +372,16 @@ h6 {
   padding: 5px 10px;
   margin: 5px 10px;
   background-color: var(--nav-dropdown-background-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border: 1px solid rgba(39, 40, 41, 0.1);
   box-shadow: none;
   transition: all 0.5s ease-in-out;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 90%)) {
+  .navmenu .dropdown ul {
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
 }
 
 .navmenu .dropdown ul ul {
@@ -359,7 +402,14 @@ h6 {
   font-size: 14px;
   padding: 40px 0;
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border-top: 1px solid rgba(39, 40, 41, 0.1);
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 90%)) {
+  .footer {
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
 }
 
 .footer .copyright p {
@@ -431,8 +481,14 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: rgba(20, 157, 221, 0.2);
   color: var(--contrast-color);
+}
+
+@supports (color: color-mix(in srgb, var(--accent-color), transparent 20%)) {
+  .scroll-top:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  }
 }
 
 .scroll-top.active {
@@ -483,7 +539,13 @@ h6 {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: rgba(39, 40, 41, 0.3);
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 70%)) {
+  .page-title .breadcrumbs ol li+li::before {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -587,10 +649,16 @@ section,
 .hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: rgba(39, 40, 41, 0.5);
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 50%)) {
+  .hero .social-links a {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+  }
 }
 
 .hero .social-links a:hover {
@@ -663,11 +731,17 @@ section,
 }
 
 .stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: rgba(39, 40, 41, 0.4);
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
   font-family: var(--heading-font);
   font-size: 14px;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 40%)) {
+  .stats .stats-item p {
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -730,8 +804,16 @@ section,
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--default-color);
+  opacity: 0.8;
   margin-bottom: 10px;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 20%)) {
+  .resume .resume-item h4 {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    opacity: 1;
+  }
 }
 
 .resume .resume-item h5 {
@@ -960,15 +1042,30 @@ section,
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  color: rgba(var(--default-color-rgb), 0.8);
   margin: 0;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 20%)) {
+  .testimonials .testimonial-item h4 {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+  }
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  color: rgba(var(--accent-color-rgb), 0.6);
   font-size: 26px;
   line-height: 0;
+}
+
+@supports (color: color-mix(in srgb, var(--accent-color), transparent 40%)) {
+  .testimonials .testimonial-item .quote-icon-left,
+  .testimonials .testimonial-item .quote-icon-right {
+    color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  }
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -1102,7 +1199,16 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border-color: rgba(var(--default-color-rgb), 0.2);
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 80%)) {
+  .contact .php-email-form input[type=text],
+  .contact .php-email-form input[type=email],
+  .contact .php-email-form textarea {
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  }
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -1114,7 +1220,16 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  color: rgba(var(--default-color-rgb), 0.3);
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 70%)) {
+  .contact .php-email-form input[type=text]::placeholder,
+  .contact .php-email-form input[type=email]::placeholder,
+  .contact .php-email-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
+  }
 }
 
 .contact .php-email-form button[type=submit] {
@@ -1145,8 +1260,15 @@ section,
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  background-color: rgba(39, 40, 41, 0.15);
   opacity: 1;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 85%)) {
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  }
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
@@ -1163,7 +1285,14 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border-bottom: 1px solid rgba(39, 40, 41, 0.15);
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 85%)) {
+  .portfolio-details .portfolio-info h3 {
+    border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  }
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1188,7 +1317,15 @@ section,
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: rgba(var(--default-color-rgb), 0.7); /* fallback: 70% of default-color */
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 30%)) {
+  .portfolio-details .portfolio-description p {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1196,18 +1333,34 @@ section,
 --------------------------------------------------------------*/
 .service-details .services-list {
   padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border: 1px solid rgba(39, 40, 41, 0.1);
   margin-bottom: 20px;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 90%)) {
+  .service-details .services-list {
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  }
 }
 
 .service-details .services-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  border-left: 3px solid rgba(39, 40, 41, 0.3);
   margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  /* Fallback for browsers that don't support color-mix (e.g. Chrome <111) */
+  color: rgba(39, 40, 41, 0.8);
   transition: 0.3s;
+}
+
+@supports (color: color-mix(in srgb, var(--default-color), transparent 20%)) {
+  .service-details .services-list a {
+    border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+  }
 }
 
 .service-details .services-list a.active {
