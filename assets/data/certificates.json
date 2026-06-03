@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Full Stack Development",
+    "slug": "fullstack",
+    "description": "I specialize in building dynamic and responsive web applications, ensuring seamless user experiences and robust functionality.",
+    "summary": "Certification covering front-end, back-end, database, and deployment fundamentals for modern web development.",
+    "issuer": "Professional Training Program",
+    "issueDate": "2025",
+    "categoryLabel": "Certification",
+    "image": "assets/img/certificate/bootcamp.png",
+    "gallery": [
+      "assets/img/certificate/bootcamp.png"
+    ],
+    "url": "certificate?id=fullstack",
+    "icon": "bi bi-briefcase",
+    "highlights": [
+      "Covers the complete web stack from interface to deployment.",
+      "Shows practical understanding of APIs, databases, and application flow.",
+      "Useful for building scalable production-ready web apps."
+    ],
+    "seoDescription": "Full stack development certification covering front-end, back-end, database, and deployment skills."
+  },
+  {
+    "title": "Java with DSA",
+    "slug": "Javawithdsa",
+    "description": "I have a strong foundation in Java and Data Structures and Algorithms, enabling me to solve complex problems efficiently and build optimized solutions.",
+    "summary": "Certification focused on Java fundamentals and data structures and algorithms for problem solving.",
+    "issuer": "Learning Program",
+    "issueDate": "2025",
+    "categoryLabel": "Certification",
+    "image": "assets/img/certificate/JAVA.png",
+    "gallery": [
+      "assets/img/certificate/JAVA.png"
+    ],
+    "url": "certificate?id=Javawithdsa",
+    "icon": "bi bi-card-checklist",
+    "highlights": [
+      "Strengthens algorithmic thinking and problem-solving habits.",
+      "Provides a Java foundation for technical interviews and projects.",
+      "Supports cleaner, more efficient code design."
+    ],
+    "seoDescription": "Java with DSA certification covering Java fundamentals and algorithms."
+  },
+  {
+    "title": "Python Essential 1",
+    "slug": "python1",
+    "description": "I have expertise in Python programming, enabling me to develop efficient and scalable solutions for various applications.",
+    "summary": "Certification that introduces Python fundamentals, problem solving, and practical programming patterns.",
+    "issuer": "Cisco Networking Academy",
+    "issueDate": "2025",
+    "categoryLabel": "Certification",
+    "image": "assets/img/certificate/PE11.png",
+    "gallery": [
+      "assets/img/certificate/PE11.png"
+    ],
+    "url": "certificate?id=python1",
+    "icon": "bi bi-bar-chart",
+    "highlights": [
+      "Introduces core Python syntax and program structure.",
+      "Builds confidence with automation and problem-solving tasks.",
+      "Prepares a strong base for future Python development."
+    ],
+    "seoDescription": "Python Essential 1 certification from Cisco Networking Academy."
+  },
+  {
+    "title": "Python Essential 2",
+    "slug": "python2",
+    "description": "I have completed Python Essentials, gaining a strong understanding of core concepts and practical applications in programming.",
+    "summary": "Certification that expands Python knowledge with more advanced problem solving and modular development.",
+    "issuer": "Cisco Networking Academy",
+    "issueDate": "2025",
+    "categoryLabel": "Certification",
+    "image": "assets/img/certificate/PE12.png",
+    "gallery": [
+      "assets/img/certificate/PE12.png"
+    ],
+    "url": "certificate?id=python2",
+    "icon": "bi bi-binoculars",
+    "highlights": [
+      "Builds on the first course with deeper Python concepts.",
+      "Improves confidence with reusable code and modular logic.",
+      "Useful for automation, scripting, and app development workflows."
+    ],
+    "seoDescription": "Python Essential 2 certification from Cisco Networking Academy."
+  },
+  {
+    "title": "Networking",
+    "slug": "Networking",
+    "description": "Certified in Cisco Networking Academy's Network Technician Career Path, with expertise in network fundamentals and protocols.",
+    "summary": "Certification covering networking fundamentals, protocols, and technician-level concepts.",
+    "issuer": "Cisco Networking Academy",
+    "issueDate": "2025",
+    "categoryLabel": "Certification",
+    "image": "assets/img/certificate/Networking.png",
+    "gallery": [
+      "assets/img/certificate/Networking.png"
+    ],
+    "url": "certificate?id=Networking",
+    "icon": "bi bi-brightness-high",
+    "highlights": [
+      "Covers core networking concepts and modern protocol basics.",
+      "Supports troubleshooting and technician-oriented thinking.",
+      "Useful for infrastructure, support, and systems pathways."
+    ],
+    "seoDescription": "Networking certification from Cisco Networking Academy."
+  },
+  {
+    "title": "AI Bootcamp by B10X",
+    "slug": "aibootcamp",
+    "description": "I successfully completed the AI Bootcamp by B10X, gaining hands-on experience in artificial intelligence and machine learning concepts.",
+    "summary": "A hands-on bootcamp focused on artificial intelligence and machine learning concepts.",
+    "issuer": "B10X",
+    "issueDate": "2025",
+    "categoryLabel": "Certification",
+    "image": "assets/img/certificate/bootcamp.png",
+    "gallery": [
+      "assets/img/certificate/bootcamp.png"
+    ],
+    "url": "certificate?id=aibootcamp",
+    "icon": "bi bi-calendar4-week",
+    "highlights": [
+      "Introduces practical AI and machine-learning concepts.",
+      "Focused on hands-on learning and applied experimentation.",
+      "Useful for future AI-assisted product development."
+    ],
+    "seoDescription": "AI Bootcamp certification by B10X covering practical AI and machine learning."
+  }
+]

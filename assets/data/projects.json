@@ -1,0 +1,143 @@
+[
+  {
+    "title": "Currency Converter",
+    "slug": "currencyconverter",
+    "description": "Currency converter web app",
+    "summary": "A fast, responsive currency converter built for quick exchange-rate lookups and everyday conversions.",
+    "category": "filter-app",
+    "categoryLabel": "Web Application",
+    "projectDate": "May 2025",
+    "image": "assets/img/portfolio/Screenshot 2025-05-19 203822 copy.png",
+    "previewImage": "assets/img/portfolio/Screenshot 2025-05-19 203822 copy.png",
+    "gallery": [
+      "assets/img/portfolio/Screenshot 2025-05-19 203822 copy.png"
+    ],
+    "liveUrl": "https://kunal285.github.io/currency-calculator/",
+    "detailsUrl": "project?id=currencyconverter",
+    "tech": "JavaScript exchange rates API",
+    "features": [
+      "Built for quick currency conversions with a clean interface.",
+      "Structured for API-driven data updates and future exchange sources.",
+      "Responsive layout optimized for desktop and mobile use."
+    ],
+    "seoDescription": "Currency converter web app built with JavaScript and API-driven exchange rates."
+  },
+  {
+    "title": "Valentine",
+    "slug": "valentine",
+    "description": "Valentine day web app",
+    "summary": "A themed interactive web app created around a celebratory Valentine experience.",
+    "category": "filter-product",
+    "categoryLabel": "Interactive Web Experience",
+    "projectDate": "May 2025",
+    "image": "assets/img/portfolio/Screenshot 2025-05-19 190059 copy.png",
+    "previewImage": "assets/img/portfolio/Screenshot 2025-05-19 190059 copy.png",
+    "gallery": [
+      "assets/img/portfolio/Screenshot 2025-05-19 190059 copy.png"
+    ],
+    "liveUrl": "https://kunal285.github.io/Valentineday/",
+    "detailsUrl": "project?id=valentine",
+    "tech": "HTML CSS JavaScript",
+    "features": [
+      "Playful interaction design with a memorable visual identity.",
+      "Optimized for a smooth experience on phones and laptops.",
+      "Easy to extend with new seasonal or themed variations."
+    ],
+    "seoDescription": "Interactive Valentine-themed web app built with HTML, CSS, and JavaScript."
+  },
+  {
+    "title": "All In One Tool",
+    "slug": "Allinonetool",
+    "description": "All in one tool for productivity",
+    "summary": "A productivity toolkit that brings several everyday utilities into one convenient interface.",
+    "category": "filter-branding",
+    "categoryLabel": "Utility Suite",
+    "projectDate": "May 2025",
+    "image": "assets/img/portfolio/Screenshot 2025-05-18 211053 - Copy.png",
+    "previewImage": "assets/img/portfolio/Screenshot 2025-05-18 211053 - Copy.png",
+    "gallery": [
+      "assets/img/portfolio/Screenshot 2025-05-18 211053 - Copy.png"
+    ],
+    "liveUrl": "https://kunal285.github.io/all-in-one-tool/",
+    "detailsUrl": "project?id=Allinonetool",
+    "tech": "Productivity utilities web app",
+    "features": [
+      "Combines frequently used tools into a single workflow.",
+      "Designed with reusable UI patterns for future utilities.",
+      "Keeps the interface simple so tasks stay fast and focused."
+    ],
+    "seoDescription": "Productivity utility suite built as an all-in-one web app."
+  },
+  {
+    "title": "Binary Botz",
+    "slug": "binarybotz",
+    "description": "Tech platform focused on AI, robotics, IoT, and digital solutions.",
+    "summary": "Binary Botz is a technology platform centered on robotics, IoT, AI, and modern digital solutions.",
+    "category": "filter-product",
+    "categoryLabel": "Web Platform",
+    "projectDate": "May 2026",
+    "image": "assets/img/portfolio/books-1.jpg",
+    "previewImage": "assets/img/portfolio/books-1.jpg",
+    "gallery": [
+      "assets/img/portfolio/books-1.jpg"
+    ],
+    "liveUrl": "https://binarybotz.com",
+    "detailsUrl": "project?id=binarybotz",
+    "tech": "AI robotics IoT",
+    "features": [
+      "Built to showcase emerging technology topics in one place.",
+      "Supports future expansion for articles, products, and tools.",
+      "Designed to feel polished while staying lightweight."
+    ],
+    "seoDescription": "Binary Botz technology platform focused on AI, robotics, IoT, and digital solutions."
+  },
+  {
+    "title": "IMAGIFY",
+    "slug": "imagify",
+    "description": "AI image generator",
+    "summary": "An AI image generation app that turns prompts into fast visual concepts.",
+    "category": "filter-app",
+    "categoryLabel": "AI Application",
+    "projectDate": "December 2025",
+    "image": "assets/img/portfolio/IMAGIFY/image.png",
+    "previewImage": "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121319.png",
+    "gallery": [
+      "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121319.png",
+      "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121326.png",
+      "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121414.png",
+      "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121341.png"
+    ],
+    "liveUrl": "https://imagify-ebon-nu.vercel.app/",
+    "detailsUrl": "project?id=imagify",
+    "tech": "AI image generation prompt",
+    "features": [
+      "Turns text prompts into generated visuals with a focused UI.",
+      "Built to feel responsive and simple to explore.",
+      "Structured for future model or workflow upgrades."
+    ],
+    "seoDescription": "AI image generator web app with a clean, responsive interface."
+  },
+  {
+    "title": "BookSphare Mitaoe",
+    "slug": "library-management-system",
+    "description": "Library management system",
+    "summary": "A library management system concept for organizing books, users, and daily circulation tasks.",
+    "category": "filter-app",
+    "categoryLabel": "Management System",
+    "projectDate": "2025",
+    "image": "assets/img/portfolio/libraryimages/image.png",
+    "previewImage": "assets/img/portfolio/libraryimages/image.png",
+    "gallery": [
+      "assets/img/portfolio/libraryimages/image.png"
+    ],
+    "liveUrl": "https://librarymanagementsystem-ds.web.app/",
+    "detailsUrl": "project?id=library-management-system",
+    "tech": "Library management CRUD",
+    "features": [
+      "Organizes core CRUD flows used by library operations.",
+      "Prepared for data entry, tracking, and reporting workflows.",
+      "Designed around a clean administrative dashboard pattern."
+    ],
+    "seoDescription": "Library management system web app with CRUD-oriented workflows."
+  }
+]
