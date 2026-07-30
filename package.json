@@ -21,6 +21,5 @@
   "homepage": "https://github.com/kunal285/darkkk#readme",
   "dependencies": {
     "express": "^5.2.1"
-  },
-  "cleanUrls": true,"trailingSlash": false
+  }
 }

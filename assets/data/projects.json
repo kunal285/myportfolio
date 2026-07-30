@@ -13,7 +13,7 @@
       "assets/img/portfolio/Screenshot 2025-05-19 203822 copy.png"
     ],
     "liveUrl": "https://currencyconverter.kunalgavit.in/",
-    "detailsUrl": "/projects?id=currencyconverter",
+    "detailsUrl": "/project?id=currencyconverter",
     "tech": "JavaScript exchange rates API",
     "features": [
       "Built for quick currency conversions with a clean interface.",
@@ -36,7 +36,7 @@
       "assets/img/portfolio/Screenshot 2025-05-19 190059 copy.png"
     ],
     "liveUrl": "https://valentineday.kunalgavit.in/",
-    "detailsUrl": "/projects?id=valentine",
+    "detailsUrl": "/project?id=valentine",
     "tech": "HTML CSS JavaScript",
     "features": [
       "Playful interaction design with a memorable visual identity.",
@@ -59,7 +59,7 @@
       "assets/img/portfolio/Screenshot 2025-05-18 211053 - Copy.png"
     ],
     "liveUrl": "https://all-in-one-tool.kunalgavit.in/",
-    "detailsUrl": "/projects?id=Allinonetool",
+    "detailsUrl": "/project?id=Allinonetool",
     "tech": "Productivity utilities web app",
     "features": [
       "Combines frequently used tools into a single workflow.",
@@ -82,7 +82,7 @@
       "assets/img/portfolio/books-1.jpg"
     ],
     "liveUrl": "https://binarybotz.com",
-    "detailsUrl": "/projects?id=binarybotz",
+    "detailsUrl": "/project?id=binarybotz",
     "tech": "AI robotics IoT",
     "features": [
       "Built to showcase emerging technology topics in one place.",
@@ -108,7 +108,7 @@
       "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121341.png"
     ],
     "liveUrl": "https://imagify.kunalgavit.in/",
-    "detailsUrl": "/projects?id=imagify",
+    "detailsUrl": "/project?id=imagify",
     "tech": "AI image generation prompt",
     "features": [
       "Turns text prompts into generated visuals with a focused UI.",
@@ -132,7 +132,7 @@
   ],
   "liveUrl": "https://librarymanagementsystem-ds.web.app/",
   "liveurl": "https://booksphere.kunalgavit.in/",
-  "detailsUrl": "/projects?id=library-management-system",
+  "detailsUrl": "/project?id=library-management-system",
   "tech": "HTML, CSS, JavaScript, Firebase, CRUD Operations",
   "features": [
     "Complete CRUD operations for books and member records.",
@@ -159,7 +159,7 @@
 "assets/img/portfolio/Todolist/registration.png"
 ],
 "liveUrl": "https://todoist-clone.kunalgavit.in/",
-"detailsUrl": "/projects?id=todoist-clone",
+"detailsUrl": "/project?id=todoist-clone",
 "tech": "HTML, CSS, JavaScript, LocalStorage",
 "features": [
 "Create, update, and delete tasks efficiently.",

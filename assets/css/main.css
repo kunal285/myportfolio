@@ -197,7 +197,8 @@ h6 {
   margin-right: 8px;
 }
 
-.header .logo h1 {
+.header .logo h1,
+.header .logo .sitename {
   font-size: 24px;
   margin: 0;
   font-weight: 700;
@@ -784,6 +785,7 @@ section,
   color: #9de8ff;
 }
 
+.hero h1,
 .hero h2 {
   margin: 0;
   font-size: 64px;
@@ -824,6 +826,7 @@ section,
 }
 
 @media (max-width: 768px) {
+  .hero h1,
   .hero h2 {
     font-size: 32px;
   }
