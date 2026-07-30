@@ -1,0 +1,278 @@
+[
+{
+"title": "Todoist Clone",
+"slug": "todoist-clone",
+"description": "A productivity-focused task management application inspired by Todoist.",
+"summary": "A task management platform that helps users organize daily activities, track progress, and improve productivity.",
+"category": "filter-product",
+"categoryLabel": "Web Application",
+"projectDate": "2025",
+"image": "assets/img/portfolio/todoist-clone.png",
+"previewImage": "assets/img/portfolio/todoist-clone.png",
+"gallery": [
+"assets/img/portfolio/todoist-clone.png"
+],
+"liveUrl": "https://bright-cendol-1e0307.netlify.app",
+"detailsUrl": "/projects?id=todoist-clone",
+"tech": "HTML, CSS, JavaScript, LocalStorage",
+"features": [
+"Create, update, and delete tasks efficiently.",
+"Organize tasks with intuitive workflows.",
+"Store user data locally using LocalStorage."
+],
+"seoDescription": "Todoist Clone productivity app for managing tasks and daily workflows."
+},
+{
+"title": "TraffIssue",
+"slug": "traffissue",
+"description": "A citizen-focused traffic issue reporting platform.",
+"summary": "Allows users to report traffic-related problems and contribute to better urban mobility management.",
+"category": "filter-product",
+"categoryLabel": "Web Platform",
+"projectDate": "2025",
+"image": "assets/img/portfolio/traffissue.png",
+"previewImage": "assets/img/portfolio/traffissue.png",
+"gallery": [
+"assets/img/portfolio/traffissue.png"
+],
+"liveUrl": "https://4347-hackthon.netlify.app",
+"detailsUrl": "/projects?id=traffissue",
+"tech": "HTML, CSS, JavaScript, LocalStorage",
+"features": [
+"Report road and traffic issues.",
+"User-friendly complaint submission interface.",
+"Designed for community engagement and awareness."
+],
+"seoDescription": "Traffic issue reporting platform for citizens and local authorities."
+},
+{
+"title": "Stayver",
+"slug": "stayver",
+"description": "A hotel booking and accommodation management platform.",
+"summary": "A modern hotel booking system that enables users to discover, compare, and reserve accommodations easily.",
+"category": "filter-product",
+"categoryLabel": "Booking Platform",
+"projectDate": "2025",
+"image": "assets/img/portfolio/stayver.png",
+"previewImage": "assets/img/portfolio/stayver.png",
+"gallery": [
+"assets/img/portfolio/stayver.png"
+],
+"liveUrl": "https://stayver.vercel.app/",
+"detailsUrl": "/projects?id=stayver",
+"tech": "React, Vite, Tailwind CSS, Clerk Authentication",
+"features": [
+"Hotel discovery and booking.",
+"Secure authentication with Clerk.",
+"Responsive and modern user interface."
+],
+"seoDescription": "Hotel booking platform built with React and Clerk Authentication."
+},
+{
+"title": "Homorax",
+"slug": "homorax",
+"description": "An e-commerce platform offering a modern shopping experience.",
+"summary": "Provides product browsing, authentication, and seamless shopping functionality.",
+"category": "filter-product",
+"categoryLabel": "E-Commerce",
+"projectDate": "2025",
+"image": "assets/img/portfolio/homorax.png",
+"previewImage": "assets/img/portfolio/homorax.png",
+"gallery": [
+"assets/img/portfolio/homorax.png"
+],
+"liveUrl": "#",
+"detailsUrl": "/projects?id=homorax",
+"tech": "React, Chakra UI, CSS, Firebase Authentication",
+"features": [
+"Modern shopping interface.",
+"Secure Firebase authentication.",
+"Responsive product catalog."
+],
+"seoDescription": "E-commerce platform built with React and Firebase."
+},
+{
+"title": "Shopnetic",
+"slug": "shopnetic",
+"description": "A mobile-friendly shopping application.",
+"summary": "A React Native e-commerce app designed for smooth and efficient mobile shopping.",
+"category": "filter-app",
+"categoryLabel": "Mobile Application",
+"projectDate": "2025",
+"image": "assets/img/portfolio/shopnetic.png",
+"previewImage": "assets/img/portfolio/shopnetic.png",
+"gallery": [
+"assets/img/portfolio/shopnetic.png"
+],
+"liveUrl": "https://expo.dev/accounts/ankit11411920/projects/Shopnetic/builds/af055e29-b510-47eb-9b90-a031ab369399",
+"detailsUrl": "/projects?id=shopnetic",
+"tech": "React Native, Expo, Firebase Authentication, AsyncStorage",
+"features": [
+"Mobile-first shopping experience.",
+"User authentication and account management.",
+"Optimized for Android devices."
+],
+"seoDescription": "React Native shopping application with Firebase integration."
+},
+{
+"title": "StopWatch",
+"slug": "stopwatch",
+"description": "A lightweight stopwatch and timer application.",
+"summary": "A simple mobile utility app for measuring time accurately and efficiently.",
+"category": "filter-app",
+"categoryLabel": "Utility Application",
+"projectDate": "2025",
+"image": "assets/img/portfolio/stopwatch.png",
+"previewImage": "assets/img/portfolio/stopwatch.png",
+"gallery": [
+"assets/img/portfolio/stopwatch.png"
+],
+"liveUrl": "https://expo.dev/accounts/ankit11411920/projects/StopWatch/builds/4ca2aa57-b1a3-4f80-8b23-c94a7ee20991",
+"detailsUrl": "/projects?id=stopwatch",
+"tech": "React Native, Expo, AsyncStorage",
+"features": [
+"Accurate stopwatch functionality.",
+"Clean and user-friendly design.",
+"Lightweight and efficient."
+],
+"seoDescription": "React Native stopwatch application with timing utilities."
+},
+{
+"title": "SkillUp",
+"slug": "skillup",
+"description": "An interactive e-learning mobile application.",
+"summary": "Designed to help users learn new skills through engaging and accessible educational content.",
+"category": "filter-app",
+"categoryLabel": "E-Learning",
+"projectDate": "2025",
+"image": "assets/img/portfolio/skillup.png",
+"previewImage": "assets/img/portfolio/skillup.png",
+"gallery": [
+"assets/img/portfolio/skillup.png"
+],
+"liveUrl": "https://github.com/Ankit1141192/SkillUp",
+"detailsUrl": "/projects?id=skillup",
+"tech": "React Native, Firebase, FCM, AsyncStorage",
+"features": [
+"Interactive learning experience.",
+"Push notifications with Firebase Cloud Messaging.",
+"Mobile-friendly educational platform."
+],
+"seoDescription": "React Native e-learning application with Firebase services."
+},
+{
+"title": "Varnavelocity",
+"slug": "varnavelocity",
+"description": "A collaborative typing platform designed to improve typing speed, accuracy, and teamwork.",
+"summary": "Varnavelocity combines competitive typing practice with secure authentication and cloud-based data storage to create an engaging learning experience.",
+"category": "filter-product",
+"categoryLabel": "Web Application",
+"projectDate": "2025",
+"image": "assets/img/portfolio/varnavelocity.png",
+"previewImage": "assets/img/portfolio/varnavelocity.png",
+"gallery": [
+"assets/img/portfolio/varnavelocity.png"
+],
+"liveUrl": "https://varnavelocity.vercel.app/",
+"detailsUrl": "/projects?id=varnavelocity",
+"tech": "React, Clerk Authentication, Firebase, Tailwind CSS, LocalStorage",
+"features": [
+"Real-time typing practice and performance tracking.",
+"Secure authentication with Clerk.",
+"Cloud-based storage and user progress management."
+],
+"seoDescription": "Collaborative typing application built with React, Firebase, and Clerk Authentication."
+},
+{
+"title": "Jeevaloop",
+"slug": "jeevaloop",
+"description": "A full-stack Hospital Management System built using the MERN stack.",
+"summary": "Jeevaloop simplifies healthcare operations through appointment booking, role-based dashboards, and secure patient management.",
+"category": "filter-product",
+"categoryLabel": "Healthcare Management",
+"projectDate": "2025",
+"image": "assets/img/portfolio/jeevaloop.png",
+"previewImage": "assets/img/portfolio/jeevaloop.png",
+"gallery": [
+"assets/img/portfolio/jeevaloop.png"
+],
+"liveUrl": "https://jeevaloop.vercel.app/",
+"detailsUrl": "/projects?id=jeevaloop",
+"tech": "React.js, Node.js, Express.js, MongoDB, JWT, Tailwind CSS",
+"features": [
+"Online appointment booking system.",
+"Role-based dashboards for doctors and administrators.",
+"Secure authentication and patient record management."
+],
+"seoDescription": "Hospital Management System built using the MERN stack with appointment booking and role-based access."
+},
+{
+"title": "VibeSync",
+"slug": "vibesync",
+"description": "A mood-based collaborative planning platform for groups and teams.",
+"summary": "VibeSync helps friends and teams make decisions together through smart planning tools and real-time collaboration.",
+"category": "filter-product",
+"categoryLabel": "Collaboration Platform",
+"projectDate": "2025",
+"image": "assets/img/portfolio/vibesync.png",
+"previewImage": "assets/img/portfolio/vibesync.png",
+"gallery": [
+"assets/img/portfolio/vibesync.png"
+],
+"liveUrl": "https://vibe-sync-frontend-eta.vercel.app/",
+"detailsUrl": "/projects?id=vibesync",
+"tech": "React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, Firebase Auth",
+"features": [
+"Group planning and collaborative decision-making.",
+"Mood-based recommendation system.",
+"Secure user authentication and real-time interactions."
+],
+"seoDescription": "Smart collaborative planning application with real-time decision-making tools."
+},
+{
+"title": "BoundDesk CRM",
+"slug": "bounddesk-crm",
+"description": "A full-stack Customer Relationship Management platform for teams and businesses.",
+"summary": "BoundDesk CRM enables organizations to manage leads, track activities, and collaborate effectively using a modern Neumorphic interface.",
+"category": "filter-product",
+"categoryLabel": "CRM Platform",
+"projectDate": "2025",
+"image": "assets/img/portfolio/bounddesk.png",
+"previewImage": "assets/img/portfolio/bounddesk.png",
+"gallery": [
+"assets/img/portfolio/bounddesk.png"
+],
+"liveUrl": "https://bound-desk.vercel.app",
+"detailsUrl": "/projects?id=bounddesk-crm",
+"tech": "React.js, Node.js, Express.js, PostgreSQL, Prisma ORM, Socket.io, JWT",
+"features": [
+"Lead and customer management.",
+"Real-time collaboration using Socket.io.",
+"Role-based access and secure authentication."
+],
+"seoDescription": "CRM platform built with React, PostgreSQL, Prisma, and Socket.io."
+},
+{
+"title": "Valdio",
+"slug": "valdio",
+"description": "A modern MERN-stack e-commerce platform with scalable architecture.",
+"summary": "Valdio delivers a complete online shopping experience with responsive design, dynamic product management, and secure authentication.",
+"category": "filter-product",
+"categoryLabel": "E-Commerce",
+"projectDate": "2025",
+"image": "assets/img/portfolio/valdio.png",
+"previewImage": "assets/img/portfolio/valdio.png",
+"gallery": [
+"assets/img/portfolio/valdio.png"
+],
+"liveUrl": "https://valdio.in/",
+"detailsUrl": "/projects?id=valdio",
+"tech": "React.js, Vite, Tailwind CSS, Material UI, Node.js, Express.js, MongoDB, JWT",
+"features": [
+"Dynamic product catalog and shopping cart.",
+"Secure user authentication and account management.",
+"Modern responsive user experience."
+],
+"seoDescription": "MERN-stack e-commerce application with secure authentication and scalable architecture."
+}
+]

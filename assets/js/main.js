@@ -33,6 +33,9 @@
     .replace(/^-+|-+$/g, '');
 
   const normalizeIdentifier = (value) => slugify(value).replace(/-/g, '');
+  const HOME_ROUTE = '/';
+  const PROJECTS_ROUTE = '/projects';
+  const CERTIFICATE_ROUTE = '/certificate';
 
   const readStoredTheme = () => {
     if (!storageAvailable) return 'light';
@@ -331,22 +334,27 @@
   /**
    * Local time badge for hero section
    */
-  const localTimePill = document.querySelector('#local-time-pill');
+ const localTimePill = document.querySelector("#local-time-pill");
 
-  if (localTimePill) {
-    const updateLocalTime = () => {
-      const formatted = new Date().toLocaleTimeString([], {
-        hour: '2-digit',
-        minute: '2-digit'
-      });
+if (localTimePill) {
+  const updateLocalTime = () => {
+    const formatted = new Date().toLocaleTimeString("en-IN", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true // Change to false for 24-hour format
+    });
 
-      localTimePill.innerHTML = '<i class="bi bi-clock-history" aria-hidden="true"></i>Local time: ' + formatted;
-    };
+    localTimePill.innerHTML = `
+      <i class="bi bi-clock-history" aria-hidden="true"></i>
+      Local Time: ${formatted}
+    `;
+  };
 
-    updateLocalTime();
-    window.setInterval(updateLocalTime, 60000);
-  }
+  updateLocalTime();
 
+  // Update every minute
+  setInterval(updateLocalTime, 60000);
+}
   /**
    * Initiate Pure Counter
    */
@@ -373,6 +381,30 @@
     });
   });
 
+  // Automatic Age Calculation
+const ageElement = document.getElementById("age");
+
+if (ageElement) {
+  const birthDate = new Date("2005-08-02"); // YYYY-MM-DD
+
+  const calculateAge = () => {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    ageElement.textContent = age;
+  };
+
+  calculateAge();
+}
   /**
    * Initiate glightbox
    */
@@ -387,7 +419,7 @@
     const slug = String(project.slug || '').trim();
     const image = String(project.image || '').trim();
     const previewImage = String(project.previewImage || image).trim();
-    const detailsUrl = String(project.detailsUrl || (slug ? `project.html?id=${encodeURIComponent(slug)}` : '#')).trim();
+    const detailsUrl = String(project.detailsUrl || (slug ? `${PROJECTS_ROUTE}?id=${encodeURIComponent(slug)}` : '#')).trim();
     const gallery = `portfolio-gallery-${slugify(project.slug || project.title || 'project')}`;
     const alt = escapeHtml(project.alt || `${project.title || 'Project'} preview`);
     const searchableText = escapeHtml([
@@ -456,7 +488,7 @@
     const title = escapeHtml(certificate.title || 'Untitled Certificate');
     const description = escapeHtml(certificate.description || 'Certificate details');
     const slug = String(certificate.slug || '').trim();
-    const url = String(certificate.url || (slug ? `certificate.html?id=${encodeURIComponent(slug)}` : '#')).trim();
+    const url = String(certificate.url || (slug ? `${CERTIFICATE_ROUTE}?id=${encodeURIComponent(slug)}` : '#')).trim();
     const iconClass = escapeHtml(certificate.icon || 'bi bi-award');
     const aosDelay = 100 + ((index % 6) * 100);
 
@@ -532,10 +564,10 @@
         title: 'Project Details',
         pageTitle: 'Project Details',
         source: 'assets/data/projects.json',
-        fallbackRoute: 'index.html#portfolio',
+        fallbackRoute: '/#portfolio',
         fallbackLabel: 'Back to projects',
         itemLabel: 'project',
-        homeHref: 'index.html'
+        homeHref: HOME_ROUTE
       };
     }
 
@@ -543,10 +575,10 @@
       title: 'Certificate Details',
       pageTitle: 'Certificate Details',
       source: 'assets/data/certificates.json',
-      fallbackRoute: 'index.html#services',
+      fallbackRoute: '/#services',
       fallbackLabel: 'Back to achievements',
       itemLabel: 'certificate',
-      homeHref: 'index.html'
+      homeHref: HOME_ROUTE
     };
   };
 
@@ -644,7 +676,7 @@
             <p>${description}</p>
             ${buildFeatureList(features)}
             <div class="detail-actions">
-              <a href="index.html#portfolio" class="btn btn-outline-primary">Back to projects</a>
+              <a href="/#portfolio" class="btn btn-outline-primary">Back to projects</a>
               ${liveUrl && liveUrl !== '#' ? `<a href="${escapeHtml(liveUrl)}" class="btn btn-primary" target="_blank" rel="noreferrer noopener">Open live project</a>` : ''}
             </div>
           </div>
@@ -668,19 +700,19 @@
       ? certificate.allCertificates.map((item) => {
           const itemTitle = escapeHtml(item.title || 'Certificate');
           const itemSlug = String(item.slug || item.title || '').trim();
-          const itemUrl = itemSlug ? `certificate.html?id=${encodeURIComponent(itemSlug)}` : 'certificate.html';
+          const itemUrl = itemSlug ? `${CERTIFICATE_ROUTE}?id=${encodeURIComponent(itemSlug)}` : CERTIFICATE_ROUTE;
           const isActive = normalizeIdentifier(item.slug) === normalizeIdentifier(certificate.slug) || normalizeIdentifier(item.title) === normalizeIdentifier(certificate.title);
 
           return `<a href="${itemUrl}" class="${isActive ? 'active' : ''}">${itemTitle}</a>`;
         }).join('')
-      : `<a href="index.html#services" class="active">${title}</a>`;
+      : `<a href="/#services" class="active">${title}</a>`;
 
     return `
       <div class="row gy-4">
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="services-list">
             ${certificateTabs}
-            <a href="index.html">Home</a>
+            <a href="${HOME_ROUTE}">Home</a>
           </div>
           <h4>${title} Certification</h4>
           <p>${summary}</p>
@@ -702,9 +734,9 @@
 
   const buildNotFoundMarkup = (context, missingId, availableItems = []) => {
     const suggestions = availableItems.slice(0, 4).map((item) => {
-      const itemId = escapeHtml(item.slug || item.title || '');
+      const itemId = encodeURIComponent(String(item.slug || item.title || ''));
       const itemTitle = escapeHtml(item.title || 'Untitled');
-      return `<li><a href="${context.itemLabel === 'project' ? `project.html?id=${itemId}` : `certificate.html?id=${itemId}`}">${itemTitle}</a></li>`;
+      return `<li><a href="${context.itemLabel === 'project' ? `${PROJECTS_ROUTE}?id=${itemId}` : `${CERTIFICATE_ROUTE}?id=${itemId}`}">${itemTitle}</a></li>`;
     }).join('');
 
     return `
@@ -985,18 +1017,38 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  const routeScrollTargets = {
+    '/about': '#about',
+    '/contact': '#contact'
+  };
+
+  const scrollToSection = (selector) => {
+    const section = document.querySelector(selector);
+
+    if (!section) {
+      return;
+    }
+
+    setTimeout(() => {
+      const scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+      window.scrollTo({
+        top: section.offsetTop - parseInt(scrollMarginTop),
+        behavior: 'smooth'
+      });
+    }, 100);
+  };
+
+  window.addEventListener('load', function() {
+    const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+    const routeTarget = routeScrollTargets[pathname];
+
+    if (routeTarget) {
+      scrollToSection(routeTarget);
+      return;
+    }
+
     if (window.location.hash) {
-      if (document.querySelector(window.location.hash)) {
-        setTimeout(() => {
-          let section = document.querySelector(window.location.hash);
-          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
-          window.scrollTo({
-            top: section.offsetTop - parseInt(scrollMarginTop),
-            behavior: 'smooth'
-          });
-        }, 100);
-      }
+      scrollToSection(window.location.hash);
     }
   });
 

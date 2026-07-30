@@ -11,7 +11,7 @@
     "gallery": [
       "assets/img/certificate/bootcamp.png"
     ],
-    "url": "certificate?id=fullstack",
+    "url": "/certificate?id=fullstack",
     "icon": "bi bi-briefcase",
     "highlights": [
       "Covers the complete web stack from interface to deployment.",
@@ -32,7 +32,7 @@
     "gallery": [
       "assets/img/certificate/JAVA.png"
     ],
-    "url": "certificate?id=Javawithdsa",
+    "url": "/certificate?id=Javawithdsa",
     "icon": "bi bi-card-checklist",
     "highlights": [
       "Strengthens algorithmic thinking and problem-solving habits.",
@@ -53,7 +53,7 @@
     "gallery": [
       "assets/img/certificate/PE11.png"
     ],
-    "url": "certificate?id=python1",
+    "url": "/certificate?id=python1",
     "icon": "bi bi-bar-chart",
     "highlights": [
       "Introduces core Python syntax and program structure.",
@@ -74,7 +74,7 @@
     "gallery": [
       "assets/img/certificate/PE12.png"
     ],
-    "url": "certificate?id=python2",
+    "url": "/certificate?id=python2",
     "icon": "bi bi-binoculars",
     "highlights": [
       "Builds on the first course with deeper Python concepts.",
@@ -95,7 +95,7 @@
     "gallery": [
       "assets/img/certificate/Networking.png"
     ],
-    "url": "certificate?id=Networking",
+    "url": "/certificate?id=Networking",
     "icon": "bi bi-brightness-high",
     "highlights": [
       "Covers core networking concepts and modern protocol basics.",
@@ -116,7 +116,7 @@
     "gallery": [
       "assets/img/certificate/bootcamp.png"
     ],
-    "url": "certificate?id=aibootcamp",
+    "url": "/certificate?id=aibootcamp",
     "icon": "bi bi-calendar4-week",
     "highlights": [
       "Introduces practical AI and machine-learning concepts.",
@@ -124,5 +124,28 @@
       "Useful for future AI-assisted product development."
     ],
     "seoDescription": "AI Bootcamp certification by B10X covering practical AI and machine learning."
-  }
+  },
+  {
+  "title": "Practical Use of AI Tools in Industry",
+  "slug": "practical-ai-tools-industry",
+  "description": "Successfully participated in the International Level Workshop on 'Practical Use of AI Tools in Industry' organized by the Department of Computer Science & Engineering (Data Science), MIT Academy of Engineering, Pune.",
+  "summary": "An international-level workshop focused on the practical application of AI tools in industry and real-world use cases.",
+  "issuer": "MIT Academy of Engineering, Pune",
+  "issueDate": "2025",
+  "categoryLabel": "Workshop Certificate",
+  "image": "assets/img/certificate/S4ds.png",
+  "gallery": [
+    "assets/img/certificate/S4ds.png"
+  ],
+  "url": "/certificate?id=practical-ai-tools-industry",
+  "icon": "bi bi-award",
+  "highlights": [
+    "Participated in an International Level AI Workshop.",
+    "Learned practical applications of AI tools in industry.",
+    "Explored real-world AI workflows and productivity tools.",
+    "Workshop delivered by Mr. Piyush Deolikar.",
+    "Organized by the Department of CSE (Data Science), MITAOE."
+  ],
+  "seoDescription": "Certificate of participation for the International Level Workshop on Practical Use of AI Tools in Industry organized by MIT Academy of Engineering, Pune."
+}
 ]

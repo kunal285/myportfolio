@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-editable",
+  "version": "1.0.0",
+  "description": "A personal portfolio website showcasing projects, certifications, skills, and achievements.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal285/darkkk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kunal285/darkkk/issues"
+  },
+  "homepage": "https://github.com/kunal285/darkkk#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "cleanUrls": true,"trailingSlash": false
+}

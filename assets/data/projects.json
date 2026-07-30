@@ -12,8 +12,8 @@
     "gallery": [
       "assets/img/portfolio/Screenshot 2025-05-19 203822 copy.png"
     ],
-    "liveUrl": "https://kunal285.github.io/currency-calculator/",
-    "detailsUrl": "project?id=currencyconverter",
+    "liveUrl": "https://currencyconverter.kunalgavit.in/",
+    "detailsUrl": "/projects?id=currencyconverter",
     "tech": "JavaScript exchange rates API",
     "features": [
       "Built for quick currency conversions with a clean interface.",
@@ -35,8 +35,8 @@
     "gallery": [
       "assets/img/portfolio/Screenshot 2025-05-19 190059 copy.png"
     ],
-    "liveUrl": "https://kunal285.github.io/Valentineday/",
-    "detailsUrl": "project?id=valentine",
+    "liveUrl": "https://valentineday.kunalgavit.in/",
+    "detailsUrl": "/projects?id=valentine",
     "tech": "HTML CSS JavaScript",
     "features": [
       "Playful interaction design with a memorable visual identity.",
@@ -58,8 +58,8 @@
     "gallery": [
       "assets/img/portfolio/Screenshot 2025-05-18 211053 - Copy.png"
     ],
-    "liveUrl": "https://kunal285.github.io/all-in-one-tool/",
-    "detailsUrl": "project?id=Allinonetool",
+    "liveUrl": "https://all-in-one-tool.kunalgavit.in/",
+    "detailsUrl": "/projects?id=Allinonetool",
     "tech": "Productivity utilities web app",
     "features": [
       "Combines frequently used tools into a single workflow.",
@@ -82,7 +82,7 @@
       "assets/img/portfolio/books-1.jpg"
     ],
     "liveUrl": "https://binarybotz.com",
-    "detailsUrl": "project?id=binarybotz",
+    "detailsUrl": "/projects?id=binarybotz",
     "tech": "AI robotics IoT",
     "features": [
       "Built to showcase emerging technology topics in one place.",
@@ -107,8 +107,8 @@
       "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121414.png",
       "assets/img/portfolio/IMAGIFY/Screenshot 2025-12-20 121341.png"
     ],
-    "liveUrl": "https://imagify-ebon-nu.vercel.app/",
-    "detailsUrl": "project?id=imagify",
+    "liveUrl": "https://imagify.kunalgavit.in/",
+    "detailsUrl": "/projects?id=imagify",
     "tech": "AI image generation prompt",
     "features": [
       "Turns text prompts into generated visuals with a focused UI.",
@@ -118,26 +118,54 @@
     "seoDescription": "AI image generator web app with a clean, responsive interface."
   },
   {
-    "title": "BookSphare Mitaoe",
-    "slug": "library-management-system",
-    "description": "Library management system",
-    "summary": "A library management system concept for organizing books, users, and daily circulation tasks.",
-    "category": "filter-app",
-    "categoryLabel": "Management System",
-    "projectDate": "2025",
-    "image": "assets/img/portfolio/libraryimages/image.png",
-    "previewImage": "assets/img/portfolio/libraryimages/image.png",
-    "gallery": [
-      "assets/img/portfolio/libraryimages/image.png"
-    ],
-    "liveUrl": "https://librarymanagementsystem-ds.web.app/",
-    "detailsUrl": "project?id=library-management-system",
-    "tech": "Library management CRUD",
-    "features": [
-      "Organizes core CRUD flows used by library operations.",
-      "Prepared for data entry, tracking, and reporting workflows.",
-      "Designed around a clean administrative dashboard pattern."
-    ],
-    "seoDescription": "Library management system web app with CRUD-oriented workflows."
-  }
+  "title": "BookSphere MITAOE",
+  "slug": "library-management-system",
+  "description": "A modern Library Management System designed to streamline book management, member records, and circulation processes.",
+  "summary": "BookSphere MITAOE is a web-based library management platform that helps librarians efficiently manage books, students, borrowing records, and inventory tracking.",
+  "category": "filter-app",
+  "categoryLabel": "Management System",
+  "projectDate": "2025",
+  "image": "assets/img/portfolio/libraryimages/image.png",
+  "previewImage": "assets/img/portfolio/libraryimages/image.png",
+  "gallery": [
+    "assets/img/portfolio/libraryimages/image.png"
+  ],
+  "liveUrl": "https://librarymanagementsystem-ds.web.app/",
+  "liveurl": "https://booksphere.kunalgavit.in/",
+  "detailsUrl": "/projects?id=library-management-system",
+  "tech": "HTML, CSS, JavaScript, Firebase, CRUD Operations",
+  "features": [
+    "Complete CRUD operations for books and member records.",
+    "Efficient book issue and return management.",
+    "Real-time data storage and synchronization using Firebase.",
+    "Search and track library inventory instantly.",
+    "User-friendly dashboard for administrators and librarians."
+  ],
+  "seoDescription": "BookSphere MITAOE is a Firebase-powered Library Management System featuring book tracking, member management, and CRUD-based library operations."
+},
+{
+  "title": "Todoist Clone",
+"slug": "todoist-clone",
+"description": "A productivity-focused task management application inspired by Todoist.",
+"summary": "A task management platform that helps users organize daily activities, track progress, and improve productivity.",
+"category": "filter-product",
+"categoryLabel": "Web Application",
+"projectDate": "2025",
+"image": "assets/img/portfolio/Todolist/home.png",
+"previewImage": "assets/img/portfolio/Todolist/home.png",
+"gallery": [
+"assets/img/portfolio/Todolist/home.png",
+"assets/img/portfolio/Todolist/plan.png",
+"assets/img/portfolio/Todolist/registration.png"
+],
+"liveUrl": "https://todoist-clone.kunalgavit.in/",
+"detailsUrl": "/projects?id=todoist-clone",
+"tech": "HTML, CSS, JavaScript, LocalStorage",
+"features": [
+"Create, update, and delete tasks efficiently.",
+"Organize tasks with intuitive workflows.",
+"Store user data locally using LocalStorage."
+],
+  "seoDescription": "BookSphere MITAOE is a Firebase-powered Library Management System featuring book tracking, member management, and CRUD-based library operations."
+}
 ]

@@ -42,22 +42,6 @@
   --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
-
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --background-color: #07111d;
-  --default-color: #e8eef7;
-  --default-color-rgb: 232, 238, 247;
-  --heading-color: #f7fbff;
-  --surface-color: #0f1b2a;
-  --contrast-color: #ffffff;
-  --nav-color: #b9c6d6;
-  --nav-hover-color: #ffffff;
-  --nav-mobile-background-color: #07111d;
-  --nav-dropdown-background-color: #07111d;
-  background: var(--background-color);
-}
-
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -1206,7 +1190,21 @@ section,
 .services .service-item {
   position: relative;
 }
+.more-link--highlight {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
 
+.more-link--highlight:hover {
+    background: #0b84bd;
+    color: #fff;
+    transform: translateY(-2px);
+}
 .services .service-item .icon {
   background: var(--accent-color);
   display: flex;
@@ -1776,5 +1774,31 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Resume Download Section
 --------------------------------------------------------------*/
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+  background: #149ddd;
+  border: none;
+}
+
+.hero-buttons .btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.hero-buttons .btn-outline-light:hover {
+  transform: translateY(-3px);
+}
