@@ -167,5 +167,36 @@
 "Store user data locally using LocalStorage."
 ],
   "seoDescription": "BookSphere MITAOE is a Firebase-powered Library Management System featuring book tracking, member management, and CRUD-based library operations."
+},
+{
+  "title": "VisionX 2026",
+  "slug": "visionx-2026",
+  "description": "National-level hackathon platform and event website",
+  "summary": "A modern, responsive hackathon platform designed to manage event information, registrations, project submissions, evaluation, and participant engagement for VisionX 2026.",
+  "category": "filter-web",
+  "categoryLabel": "Web Application",
+  "projectDate": "August 2026",
+  "image": "assets/img/portfolio/vision2026/Screenshot 2026-08-12 160114.png",
+  "previewImage": "assets/img/portfolio/vision2026/Screenshot 2026-08-12 160114.png",
+  "gallery": [
+    "assets/img/portfolio/vision2026/Screenshot 2026-07-18 195613.png",
+    "assets/img/portfolio/vision2026/Screenshot 2026-07-18 195648.png",
+    "assets/img/portfolio/vision2026/Screenshot 2026-08-12 160114.png",
+    "assets/img/portfolio/vision2026/Screenshot 2026-08-12 160120.png",
+    "assets/img/portfolio/vision2026/Screenshot 2026-08-12 160129.png",
+    "assets/img/portfolio/vision2026/Screenshot 2026-08-12 160150.png"
+  ],
+  "liveUrl": "https://vision-x.kunalgavit.in/",
+  "detailsUrl": "/project?id=visionx-2026",
+  "tech": "Next.js, React, TypeScript, Tailwind CSS, Node.js",
+  "features": [
+    "Modern landing page presenting VisionX 2026, its theme, timeline, prizes, and key event information.",
+    "Dedicated hackathon registration and participant onboarding experience.",
+    "Project and idea submission workflow for participating teams.",
+    "Responsive UI optimized for desktop, tablet, and mobile devices.",
+    "Structured event information including rules, timeline, judging criteria, prizes, and FAQs.",
+    "Designed to provide a centralized digital platform for participants, organizers, and judges."
+  ],
+  "seoDescription": "VisionX 2026 is a modern hackathon platform featuring event information, team registration, project submission, timelines, prizes, and participant resources."
 }
 ]
